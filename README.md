@@ -1,5 +1,5 @@
 # hapi-bootstrap
-This project is using a base node/hapi boiler (which is still in progress), to complete the Code School Bootstrap online course.
+This project is using a base node/hapi boiler (which is still in progress), to complete the Code School Bootstrap online course (Blasting Off With Bootstrap).
 
 ## Notes
 * ...
