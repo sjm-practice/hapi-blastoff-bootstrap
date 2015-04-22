@@ -37,21 +37,19 @@ describe('Server base routes', function () {
       });
     });
 
-    it('displays the nav bar partial successfully'
-    //   , function(done) {
-    //   var options = {
-    //     method: 'GET',
-    //     url: '/about'
-    //   };
+    it('displays the nav bar partial successfully', function (done) {
+      var options = {
+        method: 'GET',
+        url: '/about'
+      };
 
-    //   server.inject(options, function(siResponse) {
-    //     expect(siResponse.statusCode).to.equal(200);
-    //     expect(siResponse.headers['content-type']).to.equal('text/html');
-    //     expect(siResponse.payload).to.contain('some bootstrap nav bar text');
-    //     done();
-    //   });
-    // }
-    );
+      server.inject(options, function(siResponse) {
+        expect(siResponse.statusCode).to.equal(200);
+        expect(siResponse.headers['content-type']).to.equal('text/html');
+        expect(siResponse.payload).to.contain('<li><a href="/about">About</a></li>');
+        done();
+      });
+    });
 
     it('successfully gets our locally served style.css', function (done) {
       var options = {
@@ -140,7 +138,7 @@ describe('Server base routes', function () {
       server.inject(options, function(siResponse) {
         expect(siResponse.statusCode).to.equal(200);
         expect(siResponse.headers['content-type']).to.equal('text/html');
-        expect(siResponse.payload).to.contain('<h1>Hello World!</h1>');
+        expect(siResponse.payload).to.contain('<h2>The Fastest Way to Space</h2>');
         done();
       });
     });
