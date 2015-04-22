@@ -36,6 +36,7 @@
     "gulp": "^3.8.11",
     "gulp-jshint": "^1.10.0",
     "gulp-lab": "^1.0.5",
+    "gulp-nodemon": "^2.0.2",
     "jshint-stylish": "^1.0.1",
     "lab": "^5.6.1"
   }

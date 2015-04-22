@@ -2,7 +2,8 @@ var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     console = require('better-console'),
     stylish = require('jshint-stylish'),
-    lab = require('gulp-lab');
+    lab = require('gulp-lab'),
+    nodemon = require('gulp-nodemon');
 
 var paths = {
   jsSource: ['./server.js', './server/**/*.js', './test/**/*.js'],
@@ -44,4 +45,14 @@ gulp.task('test', function () {
 
 gulp.task('testw', ['clear'], function () {
   return gulp.watch(paths.allTestSource, ['clear', 'test']);
+});
+
+gulp.task('nodemon', function () {
+  return nodemon({
+    script: './bin/www',
+    ext: 'html js css',
+    tasks: ['clear']})
+  .on('restart', function () {
+    console.log('restarted...');
+  });
 });
