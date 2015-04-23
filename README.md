@@ -2,6 +2,11 @@
 This project is using a base node/hapi boiler (which is still in progress), to complete the Code School Bootstrap online course (Blasting Off With Bootstrap).
 
 ## Notes
+### Container
+* Div containment classes
+    - .container (responsive behavior, with margins)
+    - .container-fluid (same responsive behavior, but no margins)
+### Grid System
 * Column Offset
     - can use class col-md-offset-X  (will offset X columns on the left side) 
 * Screen Size
@@ -29,3 +34,19 @@ This project is using a base node/hapi boiler (which is still in progress), to c
 | large | .col-lg-? | .col-lg-offset-? | 1200px+ | desktop |
 
 note: included classes will be applied or omitted based on screen size (current window pixel width)
+
+### Typography
+* per wikipedia... is the art and technique of arranging type to make written language most appealing
+    - when dealing in web pages, font type size color style, positioning, spacing
+* Bootstrap provides classes to adjust those font characteristics
+    - ie 'lead'
+* Also classes for aligning text 
+    - ie text-center text-justify text-right text-left text-nowrap
+* 
+
+### CSS plus
+* ...
+
+### Javascript Components
+* ...
+
