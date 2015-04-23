@@ -16,6 +16,16 @@ exports.register = function (server, options, next) {
     },
     {
       method: 'GET',
+      path: '/indexsm',
+      config: {
+        handler: function (request, reply) {
+          reply.view('indexsm');
+        },
+        id: 'indexsm'
+      }
+    },
+    {
+      method: 'GET',
       path: '/about',
       config: {
         handler: function (request, reply) {
