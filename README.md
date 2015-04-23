@@ -3,6 +3,10 @@ This project is using a base node/hapi boiler (which is still in progress), to c
 
 ## Course Notes
 ### Basics
+* Web components
+    - html - structure
+    - css - style 
+    - js - behavior
 * Include bootstrap css 
     - has most of what you need
     - but if you do need other class or different behaviors, obviously, you should not modify bootstrap css, instead include another css file 
@@ -106,9 +110,33 @@ note: included classes will be applied or omitted based on screen size (current 
             * as you scroll, navbar remains at top or bottom of page
             * when fixed-top, overlaps with body a bit
                 * to account for this, add `body { padding-top: 70px; }`
+* Toggling / Collapse-able  (aka Accordion)
+    - collapse - collapses (always) list
+    - navbar-collapse - expands collapsed list when on screen above xs 
+    - sr-only - (screen reader only text) text not visible, usually used for visually impaired access, a reader reads the text out loud (similar as alt is used for images)
+        + common use in span elements
+    - navbar-toggle - will float element (like a button) right
+        + other similar helper classes, pull-right & pull-left
+    - icon-bar - a class that displays a small horizontal bar 
+        + using three of these makes a hamburger
+    - **NOTE:** these classes only impact appearance. js is needed to wire behavior (see below)
+        + use js plugin to add and remove 'collapse' class when button is clicked
+    - navbar-header - causes element to take up entire width of page when xs (similar to col-xs-12), used to push subsequent row elements below
 
 ### Javascript Components
-* 
+*  To begin with, make sure bootstrap js is included in html file (script tag)
+*  General Usage (trigger use of js plugins)
+    -  can add data-* attributes to html 
+    -  or write js explicitly to do so
+        +  a little more involved, requires knowledge of js and hte bootstrap plugins
+*  Collapse JS plugin
+    -  data-toggle - removes/adds the provided class 
+    -  data-target - css selector to choose elements for data-toggle
+    -  ie
+    ```
+    data-toggle='collapse'           // class to toggle
+    data-target='.navbar-collapse'   // which elements to toggle the class
+    ```
 
 ## Course Feedback
 * Liked the course, good introduction. Appropriate amount of material and depth
