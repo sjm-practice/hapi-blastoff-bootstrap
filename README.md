@@ -1,7 +1,7 @@
 # hapi-bootstrap
-This project is using a base node/hapi boiler (which is still in progress), to complete the Code School Bootstrap online course (Blasting Off With Bootstrap).
+This project is using a base node/hapi boiler (which is still in progress), to code along while completing the Code School Bootstrap online course (Blasting Off With Bootstrap).
 
-## Notes
+## Course Notes
 ### Basics
 * Include bootstrap css 
     - has most of what you need
@@ -64,13 +64,54 @@ note: included classes will be applied or omitted based on screen size (current 
 ```
 
 ### CSS plus
+#### Appearance
+* Bootstrap 'lead' class - changes font appearance for a sentence you wish to stand out 
 * Bootstrap 'well' class
-    - adds light backgroung, border with rounded corners
+    - adds light background, border with rounded corners
 * well-?  classes (add or decrease padding)
     - well-lg  adds padding
     - well-sm  reduces padding
     - `<div class='row well well-lg'>`
+    - note, no need for well-md class (md by default)
+* BUTTONS - appearance varies by browser
+    - use class btn to get consistant appearance, and nicer behavior
+    - add additional classes for more appearance and behaviors
+    - (to adjust size) btn-lg btn-sm btn-xs
+    - (to assign default action) btn-default  (hit enter uses this button)
+    - (to adjust color) btn-primary btn-info btn-danger btn-warning btn-success
+    - NOTE: (html) button elements have thee types: submit, reset, button
+        + see docs for each behavior
+        + often, client side scripts are associated to buttons 
+#### Navigation
+* base Navigation classes
+    - nav - base class, styling, may be used around other areas of page 
+        + usually for nav elements like links, list items etc.
+    - navbar - different styling, usually only one navbar per page 
+        + styling for navbar itself (not necessarily the nav components within it)
+* NAV
+    - nav - base nav class 
+    - nav-pills - button like links
+    - nav-tabs  - creats tab like links
+    - navbar-nav - indicates this nav component is within a navbar component
+* NAVBAR 
+    - navbar-brand, styles a link to draw attention
+    - navbar-right  positions navbar links on right side
+    - Navbar styling (color schemes, and a little padding)
+        + navbar-default  (muted text color, light background)
+        + navbar-inverse
+        + navbar-static-top
+            * removes rounded corners, positions at top, scrolls with page
+        + navbar-static-bottom, same but at bottom
+        + navbar-fixed-top (or bottom)
+            * as you scroll, navbar remains at top or bottom of page
+            * when fixed-top, overlaps with body a bit
+                * to account for this, add `body { padding-top: 70px; }`
 
 ### Javascript Components
-* ...
+* 
 
+## Course Feedback
+* Liked the course, good introduction. Appropriate amount of material and depth
+* Appropriate pace 
+* Instructor was clear, easily understood
+*  ...
