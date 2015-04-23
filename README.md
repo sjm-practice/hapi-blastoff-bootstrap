@@ -2,8 +2,12 @@
 This project is using a base node/hapi boiler (which is still in progress), to complete the Code School Bootstrap online course (Blasting Off With Bootstrap).
 
 ## Notes
-### Container
-* Div containment classes
+### Basics
+* Include bootstrap css 
+    - has most of what you need
+    - but if you do need other class or different behaviors, obviously, you should not modify bootstrap css, instead include another css file 
+* Use of container
+    - Div containment classes
     - .container (responsive behavior, with margins)
     - .container-fluid (same responsive behavior, but no margins)
 ### Grid System
@@ -42,10 +46,30 @@ note: included classes will be applied or omitted based on screen size (current 
     - ie 'lead'
 * Also classes for aligning text 
     - ie text-center text-justify text-right text-left text-nowrap
-* 
+* Glyphicons (are actually fonts, that show a picture)
+    - use `<i>` element (also used for italic, but now commonly used for this)
+    - need to use two classes to show a glyhpicon
+        + class glyhpicon sets/associates font 
+        + class glyhpicon-iconName selects the image to use
+        + `<i class='glyphicon glyphicon-briefcase'></i>`
+    - To manipulate the icon, use font characteristics
+        + ie font-size, font-color, ...
+    - It is best practice to create an additional class (outside of bootstrap.css) to adjust the glyhpicon appearance
+```
+// style.css
+.features .glyhpicon {
+    font-size: 32px;
+    color: red;
+}
+```
 
 ### CSS plus
-* ...
+* Bootstrap 'well' class
+    - adds light backgroung, border with rounded corners
+* well-?  classes (add or decrease padding)
+    - well-lg  adds padding
+    - well-sm  reduces padding
+    - `<div class='row well well-lg'>`
 
 ### Javascript Components
 * ...

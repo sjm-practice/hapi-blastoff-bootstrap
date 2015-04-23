@@ -47,7 +47,7 @@ gulp.task('testw', ['clear'], function () {
   return gulp.watch(paths.allTestSource, ['clear', 'test']);
 });
 
-gulp.task('nodemon', function () {
+gulp.task('nodemon', ['clear'], function () {
   return nodemon({
     script: './bin/www',
     ext: 'html js css',

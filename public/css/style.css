@@ -1,6 +1,15 @@
 .logo {
-    width: 20%;
-    height: 20%;
+    width: 50%;
+    height: 50%;
     border: 5px solid navy;
     margin: 20px;
+}
+
+.features .glyphicon {
+  font-size: 32px;
+  color: #2c3e50;
+}
+
+.band {
+  background: #34495e;
 }
