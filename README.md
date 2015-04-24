@@ -123,7 +123,7 @@ note: included classes will be applied or omitted based on screen size (current 
         + use js plugin to add and remove 'collapse' class when button is clicked
     - navbar-header - causes element to take up entire width of page when xs (similar to col-xs-12), used to push subsequent row elements below
 
-### Javascript Components
+### Bootstrap Javascript Plugins
 *  To begin with, make sure bootstrap js is included in html file (script tag)
 *  General Usage (trigger use of js plugins)
     -  can add data-* attributes to html 
@@ -137,6 +137,12 @@ note: included classes will be applied or omitted based on screen size (current 
     data-toggle='collapse'           // class to toggle
     data-target='.navbar-collapse'   // which elements to toggle the class
     ```
+* Dropdown-menu, items are hidden when page is first drawn
+    - when clicking on item, adds or removes (toggles) an open class, which shows as open or not
+* To support older browsers, or browsers with js disabled
+    - on the dropdown menu use a default destination in href, and add data-target='#'
+    - this will drop down the menu if js is enabled, else will take user to the href destination
+    - ie `<a href='about.html' data-target='#' data-toggle='dropdown>...</a>`
 
 ## Course Feedback
 * Liked the course, good introduction. Appropriate amount of material and depth
