@@ -1,4 +1,4 @@
-# hapi-bootstrap
+# hapi-blastoff-bootstrap
 This project is using a base node/hapi boiler (which is still in progress), to code along while completing the Code School Bootstrap online course (Blasting Off With Bootstrap).
 
 ## Course Notes
